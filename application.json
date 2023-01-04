@@ -1,11 +1,19 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "SMTP",
       "isDefault": true
     },
     {
       "id": "Assets-test.appsmith.com",
+      "isDefault": false
+    },
+    {
+      "id": "Sample",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
       "isDefault": false
     }
   ],
