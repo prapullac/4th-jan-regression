@@ -7,6 +7,22 @@
     {
       "id": "Page2",
       "isDefault": false
+    },
+    {
+      "id": "Page3",
+      "isDefault": false
+    },
+    {
+      "id": "Page4",
+      "isDefault": false
+    },
+    {
+      "id": "Page5",
+      "isDefault": false
+    },
+    {
+      "id": "Public.users",
+      "isDefault": false
     }
   ],
   "viewMode": false,
