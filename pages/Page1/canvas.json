@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 5000,
+          "bottomRow": 1292,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -25,7 +25,184 @@
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": []
+          "children": [
+            {
+              "widgetName": "prog",
+              "progressType": "linear",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                }
+              ],
+              "displayName": "Progress",
+              "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+              "searchTags": [
+                "percent"
+              ],
+              "topRow": 21,
+              "bottomRow": 41,
+              "parentRowSpace": 10,
+              "type": "PROGRESS_WIDGET",
+              "isIndeterminate": false,
+              "hideCard": false,
+              "fillColor": "#15803d",
+              "parentColumnSpace": 30.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                }
+              ],
+              "key": "0yqfxgndtq",
+              "showResult": "{{Switch2.isSwitchedOn ? true : false}}",
+              "isDeprecated": false,
+              "rightColumn": 35,
+              "counterClosewise": false,
+              "widgetId": "nmdolak2sb",
+              "isVisible": "{{Switch2.isSwitchedOn ? true : false}}",
+              "steps": "2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "progress": "25",
+              "counterClockwise": true
+            },
+            {
+              "widgetName": "line",
+              "thickness": "4",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Divider",
+              "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+              "searchTags": [
+                "line"
+              ],
+              "topRow": 41,
+              "bottomRow": 88,
+              "parentRowSpace": 10,
+              "type": "DIVIDER_WIDGET",
+              "capType": "arrow",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 30.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 6,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "key": "eddkyxdbhq",
+              "dividerColor": "teal",
+              "orientation": "horizontal",
+              "strokeStyle": "dashed",
+              "isDeprecated": false,
+              "rightColumn": 26,
+              "widgetId": "bl8ddw6hjf",
+              "capSide": "0",
+              "isVisible": "{{Switch1.isSwitchedOn ? true : false}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Switch1",
+              "displayName": "Switch",
+              "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+              "searchTags": [
+                "boolean"
+              ],
+              "topRow": 88,
+              "bottomRow": 92,
+              "parentRowSpace": 10,
+              "type": "SWITCH_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 30.0625,
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "rhes92lzn3",
+              "isDeprecated": false,
+              "rightColumn": 24,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "jpq269femp",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Label",
+              "defaultSwitchState": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Switch2",
+              "displayName": "Switch",
+              "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+              "searchTags": [
+                "boolean"
+              ],
+              "topRow": 50,
+              "bottomRow": 54,
+              "parentRowSpace": 10,
+              "type": "SWITCH_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 30.0625,
+              "leftColumn": 37,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "rhes92lzn3",
+              "isDeprecated": false,
+              "rightColumn": 49,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "oup9lkbwvd",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Label",
+              "defaultSwitchState": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
+            }
+          ]
         },
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
