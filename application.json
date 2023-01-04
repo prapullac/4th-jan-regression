@@ -3,6 +3,10 @@
     {
       "id": "Phone input",
       "isDefault": true
+    },
+    {
+      "id": "Rating",
+      "isDefault": false
     }
   ],
   "viewMode": false,
