@@ -88,9 +88,9 @@
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "step": "10",
+              "step": "5",
               "showMarksLabel": true,
-              "minRange": "5"
+              "minRange": "10"
             },
             {
               "resetFormOnClick": false,
