@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1000,
+          "bottomRow": 700,
           "containerStyle": "none",
           "snapRows": 60,
           "parentRowSpace": 1,
@@ -26,22 +26,24 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "widgetName": "Iframe1",
+              "borderColor": "#7f1d1d",
               "srcDoc": "<input id=\"messageinput\" type=\"text\"></input>\n<input type=\"button\" onclick=\"sendMyMessage()\" value=\"SEND\" />\n<script>\n    function sendMyMessage() {\n        const msgText = document.getElementById(\"messageinput\").value;\n        window.parent.postMessage(msgText, \"*\");\n    }\n</script>",
+              "dynamicPropertyPathList": [],
               "displayName": "Iframe",
               "iconSVG": "/static/media/icon.34169b6acebc8ace125dd1f638974aae.svg",
               "searchTags": [
                 "embed"
               ],
-              "topRow": 16,
-              "bottomRow": 48,
+              "topRow": 0,
+              "bottomRow": 17,
               "parentRowSpace": 10,
               "source": "https://www.eample.com",
               "type": "IFRAME_WIDGET",
               "title": "Test !!",
               "hideCard": false,
-              "borderOpacity": 100,
+              "borderOpacity": "11",
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [
@@ -53,12 +55,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 }
               ],
-              "borderWidth": 1,
+              "borderWidth": "10",
               "key": "13mwxszq6t",
               "isDeprecated": false,
               "rightColumn": 41,
@@ -80,8 +79,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 81,
-              "bottomRow": 85,
+              "topRow": 26,
+              "bottomRow": 30,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -90,7 +89,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 18,
+              "leftColumn": 16,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -110,7 +109,7 @@
               "text": "{{Iframe1.message}}",
               "key": "u2273m0zrv",
               "isDeprecated": false,
-              "rightColumn": 34,
+              "rightColumn": 32,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "tkbv6aujy0",
@@ -139,8 +138,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 85,
-              "bottomRow": 92,
+              "topRow": 55,
+              "bottomRow": 62,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -150,7 +149,7 @@
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
-              "leftColumn": 17,
+              "leftColumn": 30,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -170,7 +169,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 37,
+              "rightColumn": 50,
               "dynamicHeight": "FIXED",
               "widgetId": "eanh06wwtq",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
