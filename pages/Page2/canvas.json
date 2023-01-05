@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1220,
+          "bottomRow": 1210,
           "containerStyle": "none",
           "snapRows": 121,
           "parentRowSpace": 1,
@@ -49,7 +49,7 @@
               "inputType": "PASSWORD",
               "maxChars": "",
               "placeholderText": "Text here",
-              "isDisabled": false,
+              "isDisabled": true,
               "validation": "{{inp.text.length <= 10}}",
               "isRequired": true,
               "dynamicHeight": "FIXED",
@@ -261,47 +261,37 @@
                   "parentId": "f0ao2qxign"
                 }
               },
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "widgetName": "lists",
-              "listData": [
-                {
-                  "id": "001",
-                  "name": "Blue",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "002",
-                  "name": "Green",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "003",
-                  "name": "Red",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                }
-              ],
+              "listData": "{{Query1.data}}",
               "isCanvas": true,
               "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-              "topRow": 17,
-              "bottomRow": 57,
+              "topRow": 37,
+              "bottomRow": 96,
               "parentRowSpace": 10,
+              "onPageChange": "{{Query1.run()}}",
               "type": "LIST_WIDGET",
               "hideCard": false,
-              "gridGap": 0,
+              "onPageSizeChange": "{{Query1.run()}}",
+              "gridGap": "5",
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 38,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                },
+                {
+                  "key": "onPageSizeChange"
+                },
+                {
+                  "key": "onListItemClick"
+                }
+              ],
+              "leftColumn": 24,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "template.Image1.image"
@@ -311,6 +301,9 @@
                 },
                 {
                   "key": "template.Text2.text"
+                },
+                {
+                  "key": "listData"
                 }
               ],
               "gridType": "vertical",
@@ -320,14 +313,14 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 590,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
                   "dropDisabled": true,
                   "openParentPropertyPane": true,
-                  "minHeight": 400,
+                  "minHeight": 590,
                   "noPad": true,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
@@ -697,21 +690,37 @@
                 "undefined": true
               },
               "key": "zu7fhd509b",
-              "backgroundColor": "transparent",
+              "backgroundColor": "#818cf8",
               "isDeprecated": false,
-              "rightColumn": 62,
-              "itemBackgroundColor": "#FFFFFF",
+              "rightColumn": 48,
+              "onListItemClick": "{{showAlert('clicked','success')}}",
+              "itemBackgroundColor": "#e9d5ff",
               "widgetId": "yb3t9rhk81",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "parentId": "0",
+              "serverSidePaginationEnabled": true,
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+              "borderRadius": "1.5rem"
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page2_Query1",
+              "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "(lists.pageNo - 1) * lists.pageSize",
+                "lists.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page2",

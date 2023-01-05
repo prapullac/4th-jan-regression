@@ -1422,7 +1422,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "originalBottomRow": 179,
-              "onFilterUpdate": "{{Query2.run(() => showAlert('filtered','success'), () => {})}}",
+              "onFilterUpdate": "",
               "minDynamicHeight": 4
             }
           ]
